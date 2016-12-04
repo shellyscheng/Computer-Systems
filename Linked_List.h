@@ -1,4 +1,4 @@
-//Shiying Cheng, Nikihil Kovelamudi
+//Authors: Shiying Cheng, Nikihil Kovelamudi
 
 
 #ifndef LINKED_LIST_H
