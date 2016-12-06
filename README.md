@@ -1,4 +1,4 @@
-# Bitwise-Manipulation-Puzzles
+# Bit-Manipulation-Puzzles
 This is a series of functions that utilize bit patterns to manipulate integers. Each function is limited to using only certain types of bit operations and a certain number of them.
 
 There are three main categories of functions:
