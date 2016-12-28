@@ -1,4 +1,4 @@
-# defusing-a-binary-bomb
+# Defusing a binary bomb (X86)
 Introduction
 
 The nefarious Dr. Evil has planted a slew of "binary bombs" around the world. A binary bomb is a program that consists of a sequence of phases. Each phase expects you to type a particular string on "standard input" (stdin). If you type the correct string, then the phase is defused and the bomb proceeds to the next phase. Otherwise, the bomb explodes by printing "BOOM!!!" and then terminating. The bomb is defused when every phase has been defused.
