@@ -1,0 +1,14 @@
+Solution:
+
+Level 1:
+01 02 03 04 05 06 
+07 08 09 0b 0b 0c 
+0e 0f 0f 01 02 03 
+04 05 06 07 08 09 
+7f 16 40 00 00 00
+
+
+Notes:
+
+print touch1
+$1 = {void ()} 0x40167f <touch1>
