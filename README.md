@@ -1,4 +1,4 @@
-# Attack-Lab
+# Attack Lab (Using Buffer Overflow)
 This file contains materials for one instance of the attacklab.
 
 Files:
