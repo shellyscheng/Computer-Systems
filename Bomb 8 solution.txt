@@ -1,0 +1,25 @@
+Name: Shiying Cheng
+Bomb 8
+
+Phase 1:
+He is evil and fits easily into most overhead storage bins.
+
+Phase 2:
+0 1 1 2 3 5
+
+Phase 3:
+0 555
+1 314
+2 364
+3 -118
+4 0
+5 -118
+
+Phase 4:
+0 11
+
+Phase 5:
+777785
+
+Phase 6:
+3 4 2 5 6 1
